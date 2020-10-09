@@ -32,6 +32,8 @@ def main():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
+    option=st.sidebar.write("Developed by: Jagriti Prakash")
+    st.subheader(option)
     LIMIT_BAL = st.text_input("LIMIT_BAL","Type Here")
     SEX = st.radio("SEX",('1 = Male', '2 = Female'))
     EDUCATION= st.selectbox("EDUCATION(1 = graduate school; 2 = university; 3 = high school; 4 = others)",("1", "2", "3", "4"))
